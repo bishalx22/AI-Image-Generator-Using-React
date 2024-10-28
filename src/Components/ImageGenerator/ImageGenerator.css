@@ -1,0 +1,112 @@
+.AI-Image_generator {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.AI-Image_generator img {
+    max-width: 100%; 
+    border-radius: 15px; 
+    margin: 10px 0; 
+    transition: transform 0.2s; /* Add a transition for hover effect */
+}
+
+.AI-Image_generator img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+.header {
+    font-size: 50px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    text-align: center; /* Center the header text */
+    color: white; /* Set a color for the header text */
+}
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .header {
+        font-size: 36px; /* Decrease font size on smaller screens */
+    }
+}
+
+.header span{
+    color: aqua;
+}
+.search-box {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    background: #1f3540;
+    margin: auto; /* Centers the box */
+    padding: 10px; /* Adds some padding */
+    margin-top: 30px;
+}
+
+.search-input {
+    width: 100%;
+    max-width: 600px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 24px; 
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.search-input::placeholder {
+    color: rgb(113, 104, 104);
+    font-size: 20px; 
+}
+
+.generate-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+    height: 69px;
+    font-size: 22px;
+    border-radius: 50px;
+    background: rgb(31, 142, 142);
+    color: white;
+    cursor: pointer;
+    transition:  transform 0.1s; 
+}
+
+.generate-btn:hover {
+    background: rgb(25, 120, 120); 
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+    .search-box {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 15px; 
+    }
+
+    .search-input, .generate-btn {
+        width: 100%;
+        max-width: none;
+        font-size: 18px; 
+        height: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+
